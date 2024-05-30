@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ホームページ - ブログシステム</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        /* 样式调整 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem;
+        }
+        .posts-container {
+            flex: 3;
+            overflow-y: auto;
+            max-height: 500px; /* 设置最大高度并启用滚动 */
+        }
+        .new-post-container {
+            flex: 1;
+            margin-left: 2rem;
+            position: fixed; /* 固定位置 */
+            right: 2rem;
+            top: 10rem;
+            background: #f9f9f9;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+        }
+        .post-header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #f4f4f4;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" th:href="@{/}">ホーム</a>
+            <div th:if="${userId == null}">
+                <a href="/login-register" th:href="@{/login-register}">ログイン / 新規</a>
+            </div>
+            <div th:if="${userId != null}">
+                <a href="/myPosts" th:href="@{/myPosts}">マイの投稿</a>
+                <a href="/profile" th:href="@{/profile}">プロフィール</a>
+                <a href="/logout" th:href="@{/logout}">ログアウト</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="posts-container">
+            <h1>ホームページ</h1>
+            <h2>記事一覧</h2>
+            <div th:if="${posts != null and posts.size() > 0}">
+                <ul>
+                    <li th:each="post : ${posts}">
+                        <div class="post-header">
+                            <img th:src="@{${post.author.avatar}}" alt="アバター">
+                            <span th:text="${post.author.username}">作者名</span>
+                        </div>
+                        <h3 th:text="${post.title}">記事タイトル</h3>
+                        <p th:text="${#strings.abbreviate(post.content, 100)}">記事内容の概要</p>
+                        <p th:text="${T(com.eden.utils.DateTimeFormatterUtils).format(post.createdAt)}">作成日</p>
+                        <a th:href="@{/posts/{id}(id=${post.id})}">続きを読む</a>
+                    </li>
+                </ul>
+            </div>
+            <div th:if="${posts == null or posts.size() == 0}">
+                <p>記事がありません。</p>
+            </div>
+        </div>
+        <div th:if="${userId != null}" class="new-post-container">
+            <h2>新しい記事を作成</h2>
+            <form th:action="@{/posts/create}" method="post">
+                <input type="text" name="title" placeholder="タイトル" required>
+                <textarea name="content" placeholder="内容" required></textarea>
+                <button type="submit">投稿する</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 ブログシステム</p>
+    </footer>
+</body>
+</html>

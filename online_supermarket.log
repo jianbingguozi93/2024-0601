@@ -1,0 +1,972 @@
+2024-05-30T04:18:26.863+09:00  INFO 19840 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 19840 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:18:26.864+09:00 DEBUG 19840 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:18:26.865+09:00  INFO 19840 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:18:27.207+09:00  INFO 19840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:18:27.239+09:00  INFO 19840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:18:27.522+09:00  INFO 19840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T04:18:27.529+09:00  INFO 19840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T04:18:27.529+09:00  INFO 19840 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T04:18:27.560+09:00  INFO 19840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T04:18:27.560+09:00  INFO 19840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 670 ms
+2024-05-30T04:18:27.637+09:00  INFO 19840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:18:27.663+09:00  INFO 19840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:18:27.679+09:00  INFO 19840 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:18:27.832+09:00  INFO 19840 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:18:27.845+09:00  INFO 19840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:18:27.981+09:00  INFO 19840 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fd33f48
+2024-05-30T04:18:27.982+09:00  INFO 19840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:18:28.473+09:00  INFO 19840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:18:28.475+09:00  INFO 19840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:18:28.651+09:00  INFO 19840 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:18:28.847+09:00  WARN 19840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:18:28.892+09:00 DEBUG 19840 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:18:28.930+09:00 DEBUG 19840 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2024-05-30T04:18:28.945+09:00 DEBUG 19840 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:18:28.964+09:00 DEBUG 19840 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:18:29.034+09:00  INFO 19840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T04:18:29.039+09:00  INFO 19840 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.389 seconds (process running for 2.811)
+2024-05-30T04:18:39.681+09:00  INFO 19840 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T04:18:39.681+09:00  INFO 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T04:18:39.681+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T04:18:39.682+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T04:18:39.682+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T04:18:39.682+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@301c0aae
+2024-05-30T04:18:39.683+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f59b6c5
+2024-05-30T04:18:39.683+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T04:18:39.683+09:00  INFO 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-30T04:18:39.688+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:18:39.694+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:18:39.947+09:00 DEBUG 19840 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:18:39.961+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:18:39.963+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T04:18:39.963+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:18:39.963+09:00  WARN 19840 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-male.png
+2024-05-30T04:18:39.963+09:00  WARN 19840 --- [http-nio-8082-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2024-05-30T04:18:39.963+09:00  WARN 19840 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-female.png
+2024-05-30T04:18:39.969+09:00  WARN 19840 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-female.png.
+2024-05-30T04:18:39.969+09:00  WARN 19840 --- [http-nio-8082-exec-2] o.s.web.servlet.PageNotFound             : No endpoint GET /css/style.css.
+2024-05-30T04:18:39.969+09:00  WARN 19840 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-male.png.
+2024-05-30T04:18:39.969+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-male.png.]
+2024-05-30T04:18:39.969+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-female.png.]
+2024-05-30T04:18:39.969+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /css/style.css.]
+2024-05-30T04:18:39.969+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:18:39.969+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:18:39.969+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:18:39.973+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:18:39.973+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:18:39.973+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:18:39.974+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:18:39.974+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:18:39.974+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:18:39.981+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2024-05-30T04:18:39.981+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:18:39.981+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:18:39.983+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:18:39 JST 2024, status=404, error=Not Found, path=/images/default-avatar-ma (truncated)...]
+2024-05-30T04:18:39.983+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:18:39 JST 2024, status=404, error=Not Found, path=/css/style.css}]
+2024-05-30T04:18:39.983+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:18:39 JST 2024, status=404, error=Not Found, path=/images/default-avatar-fe (truncated)...]
+2024-05-30T04:18:40.005+09:00 DEBUG 19840 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:18:40.005+09:00 DEBUG 19840 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:18:40.005+09:00 DEBUG 19840 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:18:40.012+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2024-05-30T04:18:40.013+09:00  WARN 19840 --- [http-nio-8082-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2024-05-30T04:18:40.013+09:00  WARN 19840 --- [http-nio-8082-exec-6] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2024-05-30T04:18:40.013+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2024-05-30T04:18:40.013+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:18:40.013+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:18:40.014+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:18:40.014+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:18:40.014+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:18:40 JST 2024, status=404, error=Not Found, path=/favicon.ico}]
+2024-05-30T04:18:40.015+09:00 DEBUG 19840 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:21:50.679+09:00  INFO 14460 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 14460 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:21:50.681+09:00 DEBUG 14460 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:21:50.681+09:00  INFO 14460 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:21:51.051+09:00  INFO 14460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:21:51.087+09:00  INFO 14460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:21:51.405+09:00  INFO 14460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T04:21:51.414+09:00  INFO 14460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T04:21:51.415+09:00  INFO 14460 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T04:21:51.451+09:00  INFO 14460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T04:21:51.452+09:00  INFO 14460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2024-05-30T04:21:51.540+09:00  INFO 14460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:21:51.570+09:00  INFO 14460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:21:51.588+09:00  INFO 14460 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:21:51.793+09:00  INFO 14460 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:21:51.809+09:00  INFO 14460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:21:52.032+09:00  INFO 14460 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@238ad211
+2024-05-30T04:21:52.033+09:00  INFO 14460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:21:52.556+09:00  INFO 14460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:21:52.558+09:00  INFO 14460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:21:52.743+09:00  INFO 14460 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:21:52.947+09:00  WARN 14460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:21:53.005+09:00 DEBUG 14460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:21:53.051+09:00 DEBUG 14460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2024-05-30T04:21:53.070+09:00 DEBUG 14460 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:21:53.092+09:00 DEBUG 14460 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:21:53.159+09:00  INFO 14460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T04:21:53.169+09:00  INFO 14460 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.741 seconds (process running for 4.67)
+2024-05-30T04:22:13.193+09:00  INFO 14460 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T04:22:13.193+09:00  INFO 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T04:22:13.193+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T04:22:13.194+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T04:22:13.194+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T04:22:13.194+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4867f5cf
+2024-05-30T04:22:13.194+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ffe7c42
+2024-05-30T04:22:13.194+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T04:22:13.194+09:00  INFO 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T04:22:13.199+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:22:13.206+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:22:13.465+09:00 DEBUG 14460 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:22:13.483+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8", parameters={}
+2024-05-30T04:22:13.485+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8", parameters={}
+2024-05-30T04:22:13.485+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8", parameters={}
+2024-05-30T04:22:13.486+09:00  WARN 14460 --- [http-nio-8082-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-female.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8
+2024-05-30T04:22:13.486+09:00  WARN 14460 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8
+2024-05-30T04:22:13.486+09:00  WARN 14460 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-male.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8
+2024-05-30T04:22:13.490+09:00  WARN 14460 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /css/style.css;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8.
+2024-05-30T04:22:13.490+09:00  WARN 14460 --- [http-nio-8082-exec-1] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-female.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8.
+2024-05-30T04:22:13.490+09:00  WARN 14460 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-male.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8.
+2024-05-30T04:22:13.491+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /css/style.css;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8.]
+2024-05-30T04:22:13.491+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-female.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8.]
+2024-05-30T04:22:13.491+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:22:13.491+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-male.png;jsessionid=4C1D078DE7A19E25EC7A3B1EA62758E8.]
+2024-05-30T04:22:13.491+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:22:13.491+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:22:13.495+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:22:13.495+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:22:13.495+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:22:13.496+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:22:13.496+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:22:13.496+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:22:13.506+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2024-05-30T04:22:13.506+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:22:13.506+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:22:13.507+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:22:13 JST 2024, status=404, error=Not Found, path=/css/style.css;jsessionid (truncated)...]
+2024-05-30T04:22:13.507+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:22:13 JST 2024, status=404, error=Not Found, path=/images/default-avatar-ma (truncated)...]
+2024-05-30T04:22:13.507+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:22:13 JST 2024, status=404, error=Not Found, path=/images/default-avatar-fe (truncated)...]
+2024-05-30T04:22:13.532+09:00 DEBUG 14460 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:22:13.532+09:00 DEBUG 14460 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:22:13.532+09:00 DEBUG 14460 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:22:13.542+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2024-05-30T04:22:13.543+09:00  WARN 14460 --- [http-nio-8082-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2024-05-30T04:22:13.543+09:00  WARN 14460 --- [http-nio-8082-exec-7] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2024-05-30T04:22:13.543+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2024-05-30T04:22:13.543+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:22:13.544+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:22:13.544+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:22:13.545+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:22:13.545+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:22:13 JST 2024, status=404, error=Not Found, path=/favicon.ico}]
+2024-05-30T04:22:13.547+09:00 DEBUG 14460 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:25:56.543+09:00  INFO 5040 --- [main] com.eden.SakuraBlogApplicationTests      : Starting SakuraBlogApplicationTests using Java 21.0.3 with PID 5040 (started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:25:56.544+09:00 DEBUG 5040 --- [main] com.eden.SakuraBlogApplicationTests      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:25:56.544+09:00  INFO 5040 --- [main] com.eden.SakuraBlogApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:25:56.565+09:00 DEBUG 5040 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3fabf088
+2024-05-30T04:25:56.938+09:00  INFO 5040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:25:56.974+09:00  INFO 5040 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:25:57.292+09:00  INFO 5040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:25:57.326+09:00  INFO 5040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:25:57.341+09:00  INFO 5040 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:25:57.552+09:00  INFO 5040 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:25:57.571+09:00  INFO 5040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:25:57.851+09:00  INFO 5040 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70cf7d1e
+2024-05-30T04:25:57.852+09:00  INFO 5040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:25:58.348+09:00  INFO 5040 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:25:58.352+09:00  INFO 5040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:25:58.657+09:00  INFO 5040 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:25:59.025+09:00  WARN 5040 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:25:59.073+09:00 DEBUG 5040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:25:59.168+09:00 DEBUG 5040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2024-05-30T04:25:59.190+09:00 DEBUG 5040 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:25:59.213+09:00 DEBUG 5040 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:25:59.277+09:00  INFO 5040 --- [main] com.eden.SakuraBlogApplicationTests      : Started SakuraBlogApplicationTests in 2.885 seconds (process running for 3.429)
+2024-05-30T04:25:59.581+09:00 DEBUG 5040 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3fabf088, started on Thu May 30 04:25:56 JST 2024
+2024-05-30T04:25:59.583+09:00  INFO 5040 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:25:59.585+09:00  INFO 5040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T04:25:59.590+09:00  INFO 5040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T04:27:51.001+09:00  INFO 23024 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 23024 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:27:51.002+09:00 DEBUG 23024 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:27:51.003+09:00  INFO 23024 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:27:51.432+09:00  INFO 23024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:27:51.468+09:00  INFO 23024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:27:51.723+09:00  INFO 23024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T04:27:51.731+09:00  INFO 23024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T04:27:51.732+09:00  INFO 23024 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T04:27:51.761+09:00  INFO 23024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T04:27:51.761+09:00  INFO 23024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 734 ms
+2024-05-30T04:27:51.838+09:00  INFO 23024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:27:51.867+09:00  INFO 23024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:27:51.884+09:00  INFO 23024 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:27:52.045+09:00  INFO 23024 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:27:52.059+09:00  INFO 23024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:27:52.201+09:00  INFO 23024 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d132bb6
+2024-05-30T04:27:52.202+09:00  INFO 23024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:27:52.713+09:00  INFO 23024 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:27:52.715+09:00  INFO 23024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:27:52.888+09:00  INFO 23024 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:27:53.079+09:00  WARN 23024 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:27:53.122+09:00 DEBUG 23024 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:27:53.161+09:00 DEBUG 23024 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2024-05-30T04:27:53.176+09:00 DEBUG 23024 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:27:53.194+09:00 DEBUG 23024 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:27:53.264+09:00  INFO 23024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T04:27:53.269+09:00  INFO 23024 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.475 seconds (process running for 2.967)
+2024-05-30T04:27:56.118+09:00  INFO 23024 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T04:27:56.118+09:00  INFO 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T04:27:56.118+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T04:27:56.118+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T04:27:56.118+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T04:27:56.119+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@65f8933b
+2024-05-30T04:27:56.119+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@19beeb61
+2024-05-30T04:27:56.119+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T04:27:56.119+09:00  INFO 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T04:27:56.123+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:27:56.130+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:27:56.378+09:00 DEBUG 23024 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:27:56.392+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4", parameters={}
+2024-05-30T04:27:56.395+09:00  WARN 23024 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4
+2024-05-30T04:27:56.397+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4", parameters={}
+2024-05-30T04:27:56.397+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4", parameters={}
+2024-05-30T04:27:56.398+09:00  WARN 23024 --- [http-nio-8082-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-female.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4
+2024-05-30T04:27:56.398+09:00  WARN 23024 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-male.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4
+2024-05-30T04:27:56.399+09:00  WARN 23024 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.
+2024-05-30T04:27:56.399+09:00  WARN 23024 --- [http-nio-8082-exec-6] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-female.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.
+2024-05-30T04:27:56.399+09:00  WARN 23024 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-male.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.
+2024-05-30T04:27:56.400+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-male.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.]
+2024-05-30T04:27:56.400+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-female.png;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.]
+2024-05-30T04:27:56.400+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.]
+2024-05-30T04:27:56.400+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:27:56.400+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:27:56.400+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:27:56.403+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:27:56.403+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:27:56.403+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:27:56.404+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:27:56.404+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:27:56.404+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:27:56.413+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2024-05-30T04:27:56.413+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:27:56.413+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:27:56.414+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:27:56 JST 2024, status=404, error=Not Found, path=/images/default-avatar-fe (truncated)...]
+2024-05-30T04:27:56.414+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:27:56 JST 2024, status=404, error=Not Found, path=/images/default-avatar-ma (truncated)...]
+2024-05-30T04:27:56.414+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:27:56 JST 2024, status=404, error=Not Found, path=/css/style.css;jsessionid (truncated)...]
+2024-05-30T04:27:56.436+09:00 DEBUG 23024 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:27:56.436+09:00 DEBUG 23024 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:27:56.436+09:00 DEBUG 23024 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:28:00.692+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4", parameters={}
+2024-05-30T04:28:00.693+09:00  WARN 23024 --- [http-nio-8082-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4
+2024-05-30T04:28:00.693+09:00  WARN 23024 --- [http-nio-8082-exec-7] o.s.web.servlet.PageNotFound             : No endpoint GET /css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.
+2024-05-30T04:28:00.693+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /css/style.css;jsessionid=57DF8E44A20B748D74AF4CE92F5D65B4.]
+2024-05-30T04:28:00.693+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:28:00.694+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:28:00.694+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:28:00.695+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2024-05-30T04:28:00.695+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:28:00 JST 2024, status=404, error=Not Found, path=/css/style.css;jsessionid (truncated)...]
+2024-05-30T04:28:00.696+09:00 DEBUG 23024 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:28:18.148+09:00 DEBUG 23024 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:28:18.148+09:00 DEBUG 23024 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:28:18.164+09:00 DEBUG 23024 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:28:18.177+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:28:18.178+09:00  WARN 23024 --- [http-nio-8082-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T04:28:18.178+09:00  WARN 23024 --- [http-nio-8082-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-male.png
+2024-05-30T04:28:18.178+09:00  WARN 23024 --- [http-nio-8082-exec-8] o.s.web.servlet.PageNotFound             : No endpoint GET /css/style.css.
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:28:18.178+09:00  WARN 23024 --- [http-nio-8082-exec-9] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-male.png.
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /css/style.css.]
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-male.png.]
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:28:18.178+09:00  WARN 23024 --- [http-nio-8082-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-female.png
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:28:18.178+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:28:18.179+09:00  WARN 23024 --- [http-nio-8082-exec-10] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-female.png.
+2024-05-30T04:28:18.179+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-female.png.]
+2024-05-30T04:28:18.179+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:28:18.179+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:28:18.179+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:28:18.179+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:28:18.179+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:28:18.179+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:28:18.180+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:28:18 JST 2024, status=404, error=Not Found, path=/images/default-avatar-ma (truncated)...]
+2024-05-30T04:28:18.180+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2024-05-30T04:28:18.180+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:28:18.180+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:28:18 JST 2024, status=404, error=Not Found, path=/css/style.css}]
+2024-05-30T04:28:18.180+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:28:18 JST 2024, status=404, error=Not Found, path=/images/default-avatar-fe (truncated)...]
+2024-05-30T04:28:18.180+09:00 DEBUG 23024 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:28:18.180+09:00 DEBUG 23024 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:28:18.182+09:00 DEBUG 23024 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:28:41.589+09:00 DEBUG 23024 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:28:41.589+09:00  WARN 23024 --- [http-nio-8082-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-female.png
+2024-05-30T04:28:41.590+09:00  WARN 23024 --- [http-nio-8082-exec-5] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-female.png.
+2024-05-30T04:28:41.590+09:00 DEBUG 23024 --- [http-nio-8082-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-female.png.]
+2024-05-30T04:28:41.590+09:00 DEBUG 23024 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:28:41.590+09:00 DEBUG 23024 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:28:41.591+09:00 DEBUG 23024 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-05-30T04:28:41.601+09:00 DEBUG 23024 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:30:57.191+09:00  INFO 23024 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-30T04:30:57.203+09:00  INFO 23024 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:30:57.204+09:00  INFO 23024 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T04:30:57.209+09:00  INFO 23024 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T04:30:58.516+09:00  INFO 22828 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 22828 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:30:58.517+09:00 DEBUG 22828 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:30:58.518+09:00  INFO 22828 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:30:58.821+09:00  INFO 22828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:30:58.854+09:00  INFO 22828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:30:59.120+09:00  INFO 22828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T04:30:59.129+09:00  INFO 22828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T04:30:59.129+09:00  INFO 22828 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T04:30:59.158+09:00  INFO 22828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T04:30:59.158+09:00  INFO 22828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 621 ms
+2024-05-30T04:30:59.235+09:00  INFO 22828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:30:59.262+09:00  INFO 22828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:30:59.280+09:00  INFO 22828 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:30:59.435+09:00  INFO 22828 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:30:59.448+09:00  INFO 22828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:30:59.593+09:00  INFO 22828 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d132bb6
+2024-05-30T04:30:59.596+09:00  INFO 22828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:31:00.112+09:00  INFO 22828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:31:00.113+09:00  INFO 22828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:31:00.289+09:00  INFO 22828 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:31:00.472+09:00  WARN 22828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:31:00.515+09:00 DEBUG 22828 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:31:00.553+09:00 DEBUG 22828 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2024-05-30T04:31:00.567+09:00 DEBUG 22828 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:31:00.584+09:00 DEBUG 22828 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:31:00.651+09:00  INFO 22828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T04:31:00.656+09:00  INFO 22828 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.344 seconds (process running for 2.723)
+2024-05-30T04:31:04.552+09:00  INFO 22828 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T04:31:04.552+09:00  INFO 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T04:31:04.552+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T04:31:04.552+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T04:31:04.552+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T04:31:04.552+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@65f8933b
+2024-05-30T04:31:04.552+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@19beeb61
+2024-05-30T04:31:04.553+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T04:31:04.553+09:00  INFO 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T04:31:04.559+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:31:04.565+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:31:04.817+09:00 DEBUG 22828 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:31:04.832+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:31:04.832+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T04:31:04.832+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:31:04.835+09:00  WARN 22828 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-male.png
+2024-05-30T04:31:04.835+09:00  WARN 22828 --- [http-nio-8082-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2024-05-30T04:31:04.835+09:00  WARN 22828 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-female.png
+2024-05-30T04:31:04.839+09:00  WARN 22828 --- [http-nio-8082-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-female.png.
+2024-05-30T04:31:04.839+09:00  WARN 22828 --- [http-nio-8082-exec-2] o.s.web.servlet.PageNotFound             : No endpoint GET /css/style.css.
+2024-05-30T04:31:04.839+09:00  WARN 22828 --- [http-nio-8082-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-male.png.
+2024-05-30T04:31:04.839+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /css/style.css.]
+2024-05-30T04:31:04.839+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-female.png.]
+2024-05-30T04:31:04.839+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-male.png.]
+2024-05-30T04:31:04.839+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:31:04.839+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:31:04.839+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:31:04.842+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:31:04.842+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:31:04.842+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:31:04.843+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:31:04.843+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:31:04.843+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:31:04.853+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2024-05-30T04:31:04.853+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:31:04.853+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:31:04.854+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:31:04 JST 2024, status=404, error=Not Found, path=/images/default-avatar-ma (truncated)...]
+2024-05-30T04:31:04.854+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:31:04 JST 2024, status=404, error=Not Found, path=/images/default-avatar-fe (truncated)...]
+2024-05-30T04:31:04.854+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:31:04 JST 2024, status=404, error=Not Found, path=/css/style.css}]
+2024-05-30T04:31:04.877+09:00 DEBUG 22828 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:31:04.877+09:00 DEBUG 22828 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:31:04.877+09:00 DEBUG 22828 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:32:47.250+09:00 DEBUG 22828 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:32:47.251+09:00 DEBUG 22828 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:32:47.268+09:00 DEBUG 22828 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:32:47.288+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T04:32:47.288+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:32:47.288+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:32:47.289+09:00  WARN 22828 --- [http-nio-8082-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-male.png
+2024-05-30T04:32:47.289+09:00  WARN 22828 --- [http-nio-8082-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /images/default-avatar-female.png
+2024-05-30T04:32:47.289+09:00  WARN 22828 --- [http-nio-8082-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /css/style.css
+2024-05-30T04:32:47.289+09:00  WARN 22828 --- [http-nio-8082-exec-7] o.s.web.servlet.PageNotFound             : No endpoint GET /css/style.css.
+2024-05-30T04:32:47.289+09:00  WARN 22828 --- [http-nio-8082-exec-5] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-male.png.
+2024-05-30T04:32:47.289+09:00  WARN 22828 --- [http-nio-8082-exec-8] o.s.web.servlet.PageNotFound             : No endpoint GET /images/default-avatar-female.png.
+2024-05-30T04:32:47.289+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /css/style.css.]
+2024-05-30T04:32:47.289+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-male.png.]
+2024-05-30T04:32:47.289+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /images/default-avatar-female.png.]
+2024-05-30T04:32:47.289+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:32:47.289+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:32:47.289+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T04:32:47.290+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:32:47.290+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:32:47.290+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:32:47.290+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:32:47.290+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:32:47.290+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.1', given [text/css, */*;q=0.1] and supported [application/json, application/*+json]
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:32:47 JST 2024, status=404, error=Not Found, path=/images/default-avatar-ma (truncated)...]
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:32:47 JST 2024, status=404, error=Not Found, path=/css/style.css}]
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 04:32:47 JST 2024, status=404, error=Not Found, path=/images/default-avatar-fe (truncated)...]
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:32:47.291+09:00 DEBUG 22828 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T04:39:52.983+09:00  INFO 22660 --- [main] com.eden.SakuraBlogApplicationTests      : Starting SakuraBlogApplicationTests using Java 21.0.3 with PID 22660 (started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:39:52.983+09:00 DEBUG 22660 --- [main] com.eden.SakuraBlogApplicationTests      : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:39:52.984+09:00  INFO 22660 --- [main] com.eden.SakuraBlogApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:39:53.009+09:00 DEBUG 22660 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3fabf088
+2024-05-30T04:39:53.376+09:00  INFO 22660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:39:53.415+09:00  INFO 22660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:39:53.723+09:00  INFO 22660 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:39:53.752+09:00  INFO 22660 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:39:53.771+09:00  INFO 22660 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:39:54.011+09:00  INFO 22660 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:39:54.029+09:00  INFO 22660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:39:54.258+09:00  INFO 22660 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cb4c4cc
+2024-05-30T04:39:54.259+09:00  INFO 22660 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:39:54.776+09:00  INFO 22660 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:39:54.777+09:00  INFO 22660 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:39:55.116+09:00  INFO 22660 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:39:55.483+09:00  WARN 22660 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:39:55.538+09:00 DEBUG 22660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:39:55.662+09:00 DEBUG 22660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2024-05-30T04:39:55.687+09:00 DEBUG 22660 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:39:55.710+09:00 DEBUG 22660 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:39:55.787+09:00  INFO 22660 --- [main] com.eden.SakuraBlogApplicationTests      : Started SakuraBlogApplicationTests in 2.963 seconds (process running for 3.479)
+2024-05-30T04:39:56.123+09:00 DEBUG 22660 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3fabf088, started on Thu May 30 04:39:53 JST 2024
+2024-05-30T04:39:56.125+09:00  INFO 22660 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:39:56.126+09:00  INFO 22660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T04:39:56.135+09:00  INFO 22660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T04:42:44.772+09:00  INFO 22828 --- [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-30T04:42:44.782+09:00  INFO 22828 --- [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:42:44.783+09:00  INFO 22828 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T04:42:44.789+09:00  INFO 22828 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T04:42:46.729+09:00  INFO 14588 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 14588 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:42:46.730+09:00 DEBUG 14588 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:42:46.731+09:00  INFO 14588 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:42:47.112+09:00  INFO 14588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:42:47.145+09:00  INFO 14588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:42:47.423+09:00  INFO 14588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T04:42:47.430+09:00  INFO 14588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T04:42:47.430+09:00  INFO 14588 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T04:42:47.460+09:00  INFO 14588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T04:42:47.460+09:00  INFO 14588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 707 ms
+2024-05-30T04:42:47.543+09:00  INFO 14588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:42:47.571+09:00  INFO 14588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:42:47.590+09:00  INFO 14588 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:42:47.758+09:00  INFO 14588 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:42:47.773+09:00  INFO 14588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:42:47.923+09:00  INFO 14588 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a4930cf
+2024-05-30T04:42:47.926+09:00  INFO 14588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:42:48.445+09:00  INFO 14588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:42:48.448+09:00  INFO 14588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:42:48.633+09:00  INFO 14588 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:42:48.826+09:00  WARN 14588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:42:48.871+09:00 DEBUG 14588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:42:48.912+09:00 DEBUG 14588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /images/**] in 'resourceHandlerMapping'
+2024-05-30T04:42:48.928+09:00 DEBUG 14588 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:42:48.945+09:00 DEBUG 14588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:42:49.014+09:00  INFO 14588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T04:42:49.020+09:00  INFO 14588 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.508 seconds (process running for 2.9)
+2024-05-30T04:42:55.858+09:00  INFO 14588 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T04:42:55.858+09:00  INFO 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T04:42:55.858+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T04:42:55.858+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T04:42:55.858+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T04:42:55.859+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@105e8710
+2024-05-30T04:42:55.859+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@77c41838
+2024-05-30T04:42:55.859+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T04:42:55.859+09:00  INFO 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T04:42:55.865+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:42:55.871+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:42:56.121+09:00 DEBUG 14588 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:42:56.134+09:00 DEBUG 14588 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:42:56.135+09:00 DEBUG 14588 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T04:42:56.136+09:00 DEBUG 14588 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:42:56.139+09:00 DEBUG 14588 --- [http-nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:42:56.139+09:00 DEBUG 14588 --- [http-nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:42:56.139+09:00 DEBUG 14588 --- [http-nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:42:56.144+09:00 DEBUG 14588 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:42:56.144+09:00 DEBUG 14588 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:42:56.146+09:00 DEBUG 14588 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:43:59.214+09:00 DEBUG 14588 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T04:43:59.214+09:00 DEBUG 14588 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T04:43:59.222+09:00 DEBUG 14588 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:49:19.405+09:00  INFO 14588 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-30T04:49:19.415+09:00  INFO 14588 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:49:19.417+09:00  INFO 14588 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T04:49:19.422+09:00  INFO 14588 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T04:49:20.615+09:00  INFO 640 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 640 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:49:20.617+09:00 DEBUG 640 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:49:20.617+09:00  INFO 640 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:49:20.939+09:00  INFO 640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:49:20.976+09:00  INFO 640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:49:21.256+09:00  INFO 640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T04:49:21.267+09:00  INFO 640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T04:49:21.267+09:00  INFO 640 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T04:49:21.297+09:00  INFO 640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T04:49:21.297+09:00  INFO 640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
+2024-05-30T04:49:21.380+09:00  INFO 640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:49:21.411+09:00  INFO 640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:49:21.431+09:00  INFO 640 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:49:21.605+09:00  INFO 640 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:49:21.619+09:00  INFO 640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:49:21.753+09:00  INFO 640 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ffa91dc
+2024-05-30T04:49:21.754+09:00  INFO 640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:49:22.255+09:00  INFO 640 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:49:22.256+09:00  INFO 640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:49:22.425+09:00  INFO 640 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:49:22.606+09:00  WARN 640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:49:22.645+09:00 DEBUG 640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:49:22.680+09:00 DEBUG 640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /images/**] in 'resourceHandlerMapping'
+2024-05-30T04:49:22.694+09:00 DEBUG 640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:49:22.711+09:00 DEBUG 640 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:49:22.773+09:00  INFO 640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T04:49:22.779+09:00  INFO 640 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.402 seconds (process running for 2.816)
+2024-05-30T04:49:29.263+09:00  INFO 640 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T04:49:29.264+09:00  INFO 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T04:49:29.264+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T04:49:29.264+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T04:49:29.264+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T04:49:29.264+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3d837af7
+2024-05-30T04:49:29.264+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@19cad9f0
+2024-05-30T04:49:29.264+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T04:49:29.264+09:00  INFO 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-30T04:49:29.271+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T04:49:29.277+09:00 DEBUG 640 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T04:49:29.416+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:49:30.449+09:00 DEBUG 640 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:49:30.450+09:00 DEBUG 640 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:49:30.632+09:00 DEBUG 640 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:49:30.651+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:49:30.651+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:49:30.651+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T04:49:30.655+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:49:30.655+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:49:30.655+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:49:30.657+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:49:30.657+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:49:30.671+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:49:31.634+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:49:31.634+09:00 DEBUG 640 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:49:31.647+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:49:34.035+09:00 DEBUG 640 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:49:34.035+09:00 DEBUG 640 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:49:34.053+09:00 DEBUG 640 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:49:34.065+09:00 DEBUG 640 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:49:34.065+09:00 DEBUG 640 --- [http-nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:49:34.066+09:00 DEBUG 640 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:49:39.755+09:00 DEBUG 640 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T04:49:39.755+09:00 DEBUG 640 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T04:49:39.758+09:00 DEBUG 640 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:50:08.086+09:00 DEBUG 640 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/resetPasswordRequest", parameters={}
+2024-05-30T04:50:08.087+09:00 DEBUG 640 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showResetPasswordRequestForm(Model)
+2024-05-30T04:50:08.092+09:00 DEBUG 640 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:50:53.146+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T04:50:53.146+09:00 DEBUG 640 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T04:50:53.147+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:51:18.329+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={masked}
+2024-05-30T04:51:18.330+09:00 DEBUG 640 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#loginUser(String, String, HttpSession, Model)
+2024-05-30T04:51:18.456+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-05-30T04:51:18.457+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-05-30T04:51:18.463+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:51:18.464+09:00 DEBUG 640 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:51:18.475+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:51:18.495+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:51:18.495+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:51:18.496+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:51:27.216+09:00 DEBUG 640 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/myPosts", parameters={}
+2024-05-30T04:51:27.216+09:00 DEBUG 640 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.PostController#showMyPosts(Long, Long, Model)
+2024-05-30T04:51:27.245+09:00 DEBUG 640 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:54:08.970+09:00 DEBUG 640 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/myPosts", parameters={}
+2024-05-30T04:54:08.970+09:00 DEBUG 640 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.PostController#showMyPosts(Long, Long, Model)
+2024-05-30T04:54:08.976+09:00 DEBUG 640 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:54:08.991+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:54:08.991+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:54:09.002+09:00 DEBUG 640 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:54:09.986+09:00 DEBUG 640 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/myPosts", parameters={}
+2024-05-30T04:54:09.986+09:00 DEBUG 640 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.PostController#showMyPosts(Long, Long, Model)
+2024-05-30T04:54:09.992+09:00 DEBUG 640 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:54:10.007+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:54:10.008+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:54:10.008+09:00 DEBUG 640 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:54:10.819+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T04:54:10.820+09:00 DEBUG 640 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T04:54:10.829+09:00 DEBUG 640 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:54:10.845+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:54:10.846+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:54:10.846+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-other.png", parameters={}
+2024-05-30T04:54:10.847+09:00 DEBUG 640 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:54:10.847+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:54:10.850+09:00 DEBUG 640 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:55:44.926+09:00 DEBUG 640 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T04:55:44.926+09:00 DEBUG 640 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T04:55:44.930+09:00 DEBUG 640 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:55:44.944+09:00 DEBUG 640 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:55:44.945+09:00 DEBUG 640 --- [http-nio-8082-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:55:44.945+09:00 DEBUG 640 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:56:58.704+09:00  INFO 640 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-30T04:56:58.727+09:00  INFO 640 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:56:58.730+09:00  INFO 640 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T04:56:58.746+09:00  INFO 640 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T04:57:00.645+09:00  INFO 3000 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 3000 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T04:57:00.646+09:00 DEBUG 3000 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T04:57:00.647+09:00  INFO 3000 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T04:57:00.944+09:00  INFO 3000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T04:57:00.977+09:00  INFO 3000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2024-05-30T04:57:01.221+09:00  INFO 3000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T04:57:01.230+09:00  INFO 3000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T04:57:01.230+09:00  INFO 3000 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T04:57:01.259+09:00  INFO 3000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T04:57:01.260+09:00  INFO 3000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 591 ms
+2024-05-30T04:57:01.335+09:00  INFO 3000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T04:57:01.361+09:00  INFO 3000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T04:57:01.379+09:00  INFO 3000 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T04:57:01.535+09:00  INFO 3000 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T04:57:01.549+09:00  INFO 3000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T04:57:01.688+09:00  INFO 3000 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@631944d4
+2024-05-30T04:57:01.689+09:00  INFO 3000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T04:57:02.184+09:00  INFO 3000 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T04:57:02.187+09:00  INFO 3000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T04:57:02.359+09:00  INFO 3000 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T04:57:02.545+09:00  WARN 3000 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T04:57:02.585+09:00 DEBUG 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T04:57:02.625+09:00 DEBUG 3000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /images/**] in 'resourceHandlerMapping'
+2024-05-30T04:57:02.639+09:00 DEBUG 3000 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T04:57:02.656+09:00 DEBUG 3000 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T04:57:02.721+09:00  INFO 3000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T04:57:02.727+09:00  INFO 3000 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.289 seconds (process running for 2.663)
+2024-05-30T04:57:09.196+09:00  INFO 3000 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T04:57:09.196+09:00  INFO 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T04:57:09.196+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T04:57:09.196+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T04:57:09.196+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T04:57:09.197+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@29422e61
+2024-05-30T04:57:09.197+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@21139739
+2024-05-30T04:57:09.197+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T04:57:09.197+09:00  INFO 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T04:57:09.204+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T04:57:09.210+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T04:57:09.221+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.eden.controller.UserController.showUserProfile(java.lang.Long,org.springframework.ui.Model): Missing session attribute 'userId' of type Long
+2024-05-30T04:57:09.224+09:00  WARN 3000 --- [http-nio-8082-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.ServletRequestBindingException: Missing session attribute 'userId' of type Long]
+2024-05-30T04:57:09.224+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-05-30T04:57:09.227+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:57:09.228+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-05-30T04:57:09.236+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2024-05-30T04:57:11.046+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T04:57:11.047+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T04:57:11.048+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.eden.controller.UserController.showUserProfile(java.lang.Long,org.springframework.ui.Model): Missing session attribute 'userId' of type Long
+2024-05-30T04:57:11.048+09:00  WARN 3000 --- [http-nio-8082-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.ServletRequestBindingException: Missing session attribute 'userId' of type Long]
+2024-05-30T04:57:11.048+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-05-30T04:57:11.049+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:57:11.050+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-05-30T04:57:11.052+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2024-05-30T04:59:21.699+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T04:59:21.699+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T04:59:21.700+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.eden.controller.UserController.showUserProfile(java.lang.Long,org.springframework.ui.Model): Missing session attribute 'userId' of type Long
+2024-05-30T04:59:21.700+09:00  WARN 3000 --- [http-nio-8082-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.ServletRequestBindingException: Missing session attribute 'userId' of type Long]
+2024-05-30T04:59:21.700+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-05-30T04:59:21.700+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T04:59:21.700+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-05-30T04:59:21.701+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2024-05-30T04:59:23.667+09:00 DEBUG 3000 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:59:23.667+09:00 DEBUG 3000 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:59:23.894+09:00 DEBUG 3000 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:59:23.908+09:00 DEBUG 3000 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:59:23.909+09:00 DEBUG 3000 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T04:59:23.909+09:00 DEBUG 3000 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T04:59:23.910+09:00 DEBUG 3000 --- [http-nio-8082-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:59:23.910+09:00 DEBUG 3000 --- [http-nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:59:23.910+09:00 DEBUG 3000 --- [http-nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:59:23.912+09:00 DEBUG 3000 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:59:23.912+09:00 DEBUG 3000 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:59:23.917+09:00 DEBUG 3000 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:59:25.354+09:00 DEBUG 3000 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T04:59:25.354+09:00 DEBUG 3000 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T04:59:25.358+09:00 DEBUG 3000 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:59:35.048+09:00 DEBUG 3000 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={masked}
+2024-05-30T04:59:35.048+09:00 DEBUG 3000 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#loginUser(String, String, HttpSession, Model)
+2024-05-30T04:59:35.131+09:00 DEBUG 3000 --- [http-nio-8082-exec-9] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-05-30T04:59:35.131+09:00 DEBUG 3000 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-05-30T04:59:35.135+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:59:35.136+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:59:35.142+09:00 DEBUG 3000 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:59:35.156+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:59:35.156+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:59:35.157+09:00 DEBUG 3000 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:59:39.052+09:00 DEBUG 3000 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/posts/5", parameters={}
+2024-05-30T04:59:39.052+09:00 DEBUG 3000 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.PostController#showPost(Long, Model)
+2024-05-30T04:59:39.062+09:00 DEBUG 3000 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:59:41.003+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T04:59:41.003+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T04:59:41.009+09:00 DEBUG 3000 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:59:41.025+09:00 DEBUG 3000 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:59:41.026+09:00 DEBUG 3000 --- [http-nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:59:41.026+09:00 DEBUG 3000 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:59:44.437+09:00 DEBUG 3000 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T04:59:44.437+09:00 DEBUG 3000 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T04:59:44.448+09:00 DEBUG 3000 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T04:59:44.462+09:00 DEBUG 3000 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T04:59:44.462+09:00 DEBUG 3000 --- [http-nio-8082-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T04:59:44.462+09:00 DEBUG 3000 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T04:59:44.463+09:00 DEBUG 3000 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-other.png", parameters={}
+2024-05-30T04:59:44.463+09:00 DEBUG 3000 --- [http-nio-8082-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T04:59:44.464+09:00 DEBUG 3000 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T06:05:29.838+09:00  WARN 3000 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m57s887ms328µs200ns).
+2024-05-30T12:21:29.707+09:00  WARN 3000 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h15m59s868ms784µs800ns).
+2024-05-30T13:43:37.928+09:00  INFO 16404 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 16404 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T13:43:37.930+09:00 DEBUG 16404 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T13:43:37.930+09:00  INFO 16404 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T13:43:38.582+09:00  INFO 16404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T13:43:38.632+09:00  INFO 16404 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-05-30T13:43:39.060+09:00  INFO 16404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T13:43:39.082+09:00  INFO 16404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T13:43:39.082+09:00  INFO 16404 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T13:43:39.133+09:00  INFO 16404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T13:43:39.133+09:00  INFO 16404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1123 ms
+2024-05-30T13:43:39.271+09:00  INFO 16404 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T13:43:39.334+09:00  INFO 16404 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T13:43:39.362+09:00  INFO 16404 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T13:43:39.645+09:00  INFO 16404 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T13:43:39.670+09:00  INFO 16404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T13:43:39.959+09:00  INFO 16404 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d132bb6
+2024-05-30T13:43:39.962+09:00  INFO 16404 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T13:43:40.809+09:00  INFO 16404 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T13:43:40.811+09:00  INFO 16404 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T13:43:41.073+09:00  INFO 16404 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T13:43:41.369+09:00  WARN 16404 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T13:43:41.450+09:00 DEBUG 16404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T13:43:41.519+09:00 DEBUG 16404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /images/**] in 'resourceHandlerMapping'
+2024-05-30T13:43:41.540+09:00 DEBUG 16404 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T13:43:41.568+09:00 DEBUG 16404 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T13:43:41.686+09:00  INFO 16404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T13:43:41.700+09:00  INFO 16404 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 4.262 seconds (process running for 5.091)
+2024-05-30T13:43:51.145+09:00  INFO 16404 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T13:43:51.145+09:00  INFO 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T13:43:51.145+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T13:43:51.145+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T13:43:51.145+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T13:43:51.153+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4a29520e
+2024-05-30T13:43:51.153+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f5d292c
+2024-05-30T13:43:51.153+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T13:43:51.153+09:00  INFO 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-05-30T13:43:51.161+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T13:43:51.177+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T13:43:51.794+09:00 DEBUG 16404 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:43:51.843+09:00 DEBUG 16404 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png;jsessionid=63A838958076112CFFB79AFF52ED6851", parameters={}
+2024-05-30T13:43:51.843+09:00 DEBUG 16404 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png;jsessionid=63A838958076112CFFB79AFF52ED6851", parameters={}
+2024-05-30T13:43:51.843+09:00 DEBUG 16404 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css;jsessionid=63A838958076112CFFB79AFF52ED6851", parameters={}
+2024-05-30T13:43:51.867+09:00 DEBUG 16404 --- [http-nio-8082-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T13:43:51.867+09:00 DEBUG 16404 --- [http-nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T13:43:51.867+09:00 DEBUG 16404 --- [http-nio-8082-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T13:43:51.891+09:00 DEBUG 16404 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:43:51.891+09:00 DEBUG 16404 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:43:51.891+09:00 DEBUG 16404 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:43:51.931+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2024-05-30T13:43:51.931+09:00  WARN 16404 --- [http-nio-8082-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2024-05-30T13:43:51.931+09:00  WARN 16404 --- [http-nio-8082-exec-9] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2024-05-30T13:43:51.939+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.]
+2024-05-30T13:43:51.939+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-30T13:43:51.943+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-30T13:43:51.947+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-05-30T13:43:51.963+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-30T13:43:51.963+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu May 30 13:43:51 JST 2024, status=404, error=Not Found, path=/favicon.ico}]
+2024-05-30T13:43:52.011+09:00 DEBUG 16404 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-30T13:44:10.391+09:00 DEBUG 16404 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/login-register;jsessionid=63A838958076112CFFB79AFF52ED6851", parameters={}
+2024-05-30T13:44:10.391+09:00 DEBUG 16404 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T13:44:10.399+09:00 DEBUG 16404 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:44:17.493+09:00 DEBUG 16404 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/resetPasswordRequest", parameters={}
+2024-05-30T13:44:17.493+09:00 DEBUG 16404 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showResetPasswordRequestForm(Model)
+2024-05-30T13:44:17.501+09:00 DEBUG 16404 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:53:39.438+09:00  INFO 9696 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 9696 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T13:53:39.439+09:00 DEBUG 9696 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T13:53:39.439+09:00  INFO 9696 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T13:53:39.845+09:00  INFO 9696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T13:53:39.876+09:00  INFO 9696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2024-05-30T13:53:40.141+09:00  INFO 9696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T13:53:40.148+09:00  INFO 9696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T13:53:40.148+09:00  INFO 9696 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T13:53:40.179+09:00  INFO 9696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T13:53:40.179+09:00  INFO 9696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 716 ms
+2024-05-30T13:53:40.255+09:00  INFO 9696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T13:53:40.283+09:00  INFO 9696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T13:53:40.301+09:00  INFO 9696 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T13:53:40.457+09:00  INFO 9696 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T13:53:40.470+09:00  INFO 9696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T13:53:40.610+09:00  INFO 9696 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d132bb6
+2024-05-30T13:53:40.612+09:00  INFO 9696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T13:53:41.128+09:00  INFO 9696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T13:53:41.129+09:00  INFO 9696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T13:53:41.307+09:00  INFO 9696 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T13:53:41.503+09:00  WARN 9696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T13:53:41.543+09:00 DEBUG 9696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T13:53:41.578+09:00 DEBUG 9696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /images/**] in 'resourceHandlerMapping'
+2024-05-30T13:53:41.593+09:00 DEBUG 9696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T13:53:41.610+09:00 DEBUG 9696 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T13:53:41.677+09:00  INFO 9696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T13:53:41.683+09:00  INFO 9696 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.464 seconds (process running for 2.89)
+2024-05-30T13:54:08.786+09:00  INFO 9696 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T13:54:08.787+09:00  INFO 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T13:54:08.787+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T13:54:08.787+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T13:54:08.787+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T13:54:08.788+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4a29520e
+2024-05-30T13:54:08.788+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f5d292c
+2024-05-30T13:54:08.788+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T13:54:08.788+09:00  INFO 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T13:54:08.797+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T13:54:08.808+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T13:54:09.255+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:54:09.279+09:00 DEBUG 9696 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/style.css", parameters={}
+2024-05-30T13:54:09.283+09:00 DEBUG 9696 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-male.png", parameters={}
+2024-05-30T13:54:09.283+09:00 DEBUG 9696 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-female.png", parameters={}
+2024-05-30T13:54:09.284+09:00 DEBUG 9696 --- [http-nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/css/]]
+2024-05-30T13:54:09.284+09:00 DEBUG 9696 --- [http-nio-8082-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T13:54:09.284+09:00 DEBUG 9696 --- [http-nio-8082-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T13:54:09.288+09:00 DEBUG 9696 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T13:54:09.288+09:00 DEBUG 9696 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T13:54:09.288+09:00 DEBUG 9696 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T13:54:12.009+09:00 DEBUG 9696 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T13:54:12.009+09:00 DEBUG 9696 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T13:54:12.029+09:00 DEBUG 9696 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:54:20.661+09:00 DEBUG 9696 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={masked}
+2024-05-30T13:54:20.662+09:00 DEBUG 9696 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#loginUser(String, String, HttpSession, Model)
+2024-05-30T13:54:20.797+09:00 DEBUG 9696 --- [http-nio-8082-exec-6] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-05-30T13:54:20.797+09:00 DEBUG 9696 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-05-30T13:54:20.804+09:00 DEBUG 9696 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T13:54:20.804+09:00 DEBUG 9696 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T13:54:20.814+09:00 DEBUG 9696 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:54:33.239+09:00 DEBUG 9696 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/posts/5", parameters={}
+2024-05-30T13:54:33.241+09:00 DEBUG 9696 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.PostController#showPost(Long, Model)
+2024-05-30T13:54:33.265+09:00 DEBUG 9696 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:54:35.067+09:00 DEBUG 9696 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T13:54:35.067+09:00 DEBUG 9696 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T13:54:35.078+09:00 DEBUG 9696 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:55:43.694+09:00 DEBUG 9696 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T13:55:43.695+09:00 DEBUG 9696 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T13:55:43.712+09:00 DEBUG 9696 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:55:43.727+09:00 DEBUG 9696 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/default-avatar-other.png", parameters={}
+2024-05-30T13:55:43.727+09:00 DEBUG 9696 --- [http-nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/images/]]
+2024-05-30T13:55:43.728+09:00 DEBUG 9696 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-30T13:56:33.831+09:00 DEBUG 9696 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/profile", parameters={}
+2024-05-30T13:56:33.831+09:00 DEBUG 9696 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#showUserProfile(Long, Model)
+2024-05-30T13:56:33.837+09:00 DEBUG 9696 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:56:37.453+09:00 DEBUG 9696 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/myPosts", parameters={}
+2024-05-30T13:56:37.454+09:00 DEBUG 9696 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.PostController#showMyPosts(Long, Long, Model)
+2024-05-30T13:56:37.474+09:00 DEBUG 9696 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:57:35.374+09:00 DEBUG 9696 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/logout", parameters={}
+2024-05-30T13:57:35.374+09:00 DEBUG 9696 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#logout(HttpSession, SessionStatus)
+2024-05-30T13:57:35.375+09:00 DEBUG 9696 --- [http-nio-8082-exec-8] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-05-30T13:57:35.375+09:00 DEBUG 9696 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-05-30T13:57:35.379+09:00 DEBUG 9696 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T13:57:35.380+09:00 DEBUG 9696 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T13:57:35.394+09:00 DEBUG 9696 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:57:36.240+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T13:57:36.240+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T13:57:36.242+09:00 DEBUG 9696 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T13:57:40.357+09:00 DEBUG 9696 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T13:57:40.358+09:00 DEBUG 9696 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T13:57:40.373+09:00 DEBUG 9696 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T14:20:36.849+09:00  INFO 9696 --- [RMI TCP Connection(36)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-30T14:20:36.861+09:00  INFO 9696 --- [RMI TCP Connection(36)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T14:20:36.862+09:00  INFO 9696 --- [RMI TCP Connection(36)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T14:20:36.868+09:00  INFO 9696 --- [RMI TCP Connection(36)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T14:20:38.211+09:00  INFO 27884 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 27884 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T14:20:38.212+09:00 DEBUG 27884 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T14:20:38.212+09:00  INFO 27884 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T14:20:38.556+09:00  INFO 27884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T14:20:38.587+09:00  INFO 27884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2024-05-30T14:20:38.855+09:00  INFO 27884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T14:20:38.861+09:00  INFO 27884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T14:20:38.862+09:00  INFO 27884 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T14:20:38.891+09:00  INFO 27884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T14:20:38.891+09:00  INFO 27884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 655 ms
+2024-05-30T14:20:38.974+09:00  INFO 27884 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T14:20:39.002+09:00  INFO 27884 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T14:20:39.021+09:00  INFO 27884 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T14:20:39.195+09:00  INFO 27884 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T14:20:39.210+09:00  INFO 27884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T14:20:39.360+09:00  INFO 27884 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@631944d4
+2024-05-30T14:20:39.361+09:00  INFO 27884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T14:20:39.892+09:00  INFO 27884 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T14:20:39.894+09:00  INFO 27884 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T14:20:40.081+09:00  INFO 27884 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T14:20:40.275+09:00  WARN 27884 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T14:20:40.317+09:00 DEBUG 27884 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T14:20:40.355+09:00 DEBUG 27884 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /images/**] in 'resourceHandlerMapping'
+2024-05-30T14:20:40.371+09:00 DEBUG 27884 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T14:20:40.390+09:00 DEBUG 27884 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T14:20:40.453+09:00  INFO 27884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T14:20:40.459+09:00  INFO 27884 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.462 seconds (process running for 2.837)
+2024-05-30T14:20:45.837+09:00  INFO 27884 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T14:20:45.837+09:00  INFO 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T14:20:45.837+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T14:20:45.837+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T14:20:45.837+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T14:20:45.837+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@29422e61
+2024-05-30T14:20:45.838+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@21139739
+2024-05-30T14:20:45.838+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T14:20:45.838+09:00  INFO 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T14:20:45.843+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T14:20:45.849+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T14:20:46.128+09:00 DEBUG 27884 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T14:20:47.071+09:00 DEBUG 27884 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T14:20:47.072+09:00 DEBUG 27884 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T14:20:47.076+09:00 DEBUG 27884 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T14:20:52.572+09:00 DEBUG 27884 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={masked}
+2024-05-30T14:20:52.572+09:00 DEBUG 27884 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#loginUser(String, String, HttpSession, Model)
+2024-05-30T14:20:52.702+09:00 DEBUG 27884 --- [http-nio-8082-exec-3] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-05-30T14:20:52.703+09:00 DEBUG 27884 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-05-30T14:20:52.707+09:00 DEBUG 27884 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T14:20:52.707+09:00 DEBUG 27884 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T14:20:52.718+09:00 DEBUG 27884 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T14:23:19.137+09:00  INFO 27884 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-30T14:23:19.146+09:00  INFO 27884 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T14:23:19.147+09:00  INFO 27884 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-30T14:23:19.153+09:00  INFO 27884 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-30T14:23:21.115+09:00  INFO 8492 --- [main] com.eden.SakuraBlogApplication           : Starting SakuraBlogApplication using Java 17.0.10 with PID 8492 (C:\pleiades\2024-03\20240103\workspace\SakuraBlog\target\classes started by jianb in C:\pleiades\2024-03\20240103\workspace\SakuraBlog)
+2024-05-30T14:23:21.116+09:00 DEBUG 8492 --- [main] com.eden.SakuraBlogApplication           : Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-05-30T14:23:21.117+09:00  INFO 8492 --- [main] com.eden.SakuraBlogApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-05-30T14:23:21.452+09:00  INFO 8492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-30T14:23:21.488+09:00  INFO 8492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2024-05-30T14:23:21.769+09:00  INFO 8492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-05-30T14:23:21.776+09:00  INFO 8492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-30T14:23:21.776+09:00  INFO 8492 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-30T14:23:21.805+09:00  INFO 8492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-30T14:23:21.806+09:00  INFO 8492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 666 ms
+2024-05-30T14:23:21.896+09:00  INFO 8492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-30T14:23:21.926+09:00  INFO 8492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-30T14:23:21.946+09:00  INFO 8492 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-30T14:23:22.127+09:00  INFO 8492 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-30T14:23:22.142+09:00  INFO 8492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-30T14:23:22.293+09:00  INFO 8492 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@448086ab
+2024-05-30T14:23:22.296+09:00  INFO 8492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-30T14:23:22.845+09:00  INFO 8492 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-30T14:23:22.847+09:00  INFO 8492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-30T14:23:23.040+09:00  INFO 8492 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-30T14:23:23.237+09:00  WARN 8492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-30T14:23:23.284+09:00 DEBUG 8492 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2024-05-30T14:23:23.326+09:00 DEBUG 8492 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /css/**, /images/**] in 'resourceHandlerMapping'
+2024-05-30T14:23:23.342+09:00 DEBUG 8492 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-30T14:23:23.362+09:00 DEBUG 8492 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-30T14:23:23.431+09:00  INFO 8492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2024-05-30T14:23:23.438+09:00  INFO 8492 --- [main] com.eden.SakuraBlogApplication           : Started SakuraBlogApplication in 2.559 seconds (process running for 2.963)
+2024-05-30T14:24:34.915+09:00  INFO 8492 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-30T14:24:34.916+09:00  INFO 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-30T14:24:34.916+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-30T14:24:34.916+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-30T14:24:34.916+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-30T14:24:34.917+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@32cfd722
+2024-05-30T14:24:34.917+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3681c285
+2024-05-30T14:24:34.917+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-30T14:24:34.917+09:00  INFO 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-30T14:24:34.923+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T14:24:34.929+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T14:24:35.187+09:00 DEBUG 8492 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T14:24:37.165+09:00 DEBUG 8492 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login-register", parameters={}
+2024-05-30T14:24:37.166+09:00 DEBUG 8492 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showLoginRegisterPage(Model)
+2024-05-30T14:24:37.170+09:00 DEBUG 8492 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-30T14:24:44.307+09:00 DEBUG 8492 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={masked}
+2024-05-30T14:24:44.307+09:00 DEBUG 8492 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.UserController#loginUser(String, String, HttpSession, Model)
+2024-05-30T14:24:44.391+09:00 DEBUG 8492 --- [http-nio-8082-exec-3] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2024-05-30T14:24:44.391+09:00 DEBUG 8492 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2024-05-30T14:24:44.395+09:00 DEBUG 8492 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-05-30T14:24:44.395+09:00 DEBUG 8492 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.eden.controller.HomeController#showHomePage(Model, HttpSession)
+2024-05-30T14:24:44.402+09:00 DEBUG 8492 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

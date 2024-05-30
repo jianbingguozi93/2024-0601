@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン / 新規登録 - ブログシステム</title>
+    <style>
+        .error {
+            color: red;
+        }
+        .hint {
+            color: gray;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" th:href="@{/}">ホーム</a>
+        </nav>
+    </header>
+    <main>
+        <h1>ログイン / 新規登録</h1>
+		<div>
+		    <h2>ログイン</h2>
+			
+		    <form th:action="@{/login}" method="post">
+		        <label>ユーザー名 または メールアドレス：</label>
+		        <input type="text" name="usernameOrEmail" required/><br/>
+		        <span class="hint">ユーザー名またはメールアドレスのいずれかを入力してください</span><br/>
+		        <label>パスワード：</label>
+		        <input type="password" name="password" required/><br/>
+		        <button type="submit">ログイン</button>
+		        <p th:if="${loginError}" th:text="${loginError}" class="error"></p>
+		    </form>
+				<button type="submit">ホームへ</button>	
+		    <a href="#" th:href="@{/resetPasswordRequest}">パスワードをお忘れですか？</a>
+		</div>
+        <div>
+            <h2>新規登録</h2>
+            <form th:action="@{/register}" method="post">
+                <label>ユーザー名：</label>
+                <input type="text" name="username" required pattern="^[a-zA-Z0-9_]{1,10}$" title="ユーザー名は10文字以内で、英数字およびアンダースコアのみ使用できます" /><br/>
+                <span class="hint">ユーザー名は10文字以内で、英数字およびアンダースコアのみ使用できます</span><br/>
+                <label>パスワード：</label>
+                <input type="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$" title="パスワードは8文字以上で、英数字のみ使用できます" /><br/>
+                <span class="hint">パスワードは8文字以上で、英数字のみ使用できます</span><br/>
+                <label>メールアドレス：</label>
+                <input type="email" name="email" required pattern="^[\\w.%+-]+@[\\w.-]+\\.[a-zA-Z]{2,6}$" title="正しいメールアドレス形式を入力してください" /><br/>
+                <span class="hint">例: example@example.com</span><br/>
+                <label>姓：</label>
+                <input type="text" name="firstName" required /><br/>
+                <label>名：</label>
+                <input type="text" name="lastName" required /><br/>
+				<label>姓のカタカナ：</label>
+				<input type="text" name="firstNameKana" required pattern="^[ァ-ヶー]+$" title="カタカナのみ使用できます" /><br/>
+				<span class="hint">カタカナのみ使用できます</span><br/>
+				<label>名のカタカナ：</label>
+				<input type="text" name="lastNameKana" required pattern="^[ァ-ヶー]+$" title="カタカナのみ使用できます" /><br/>
+				<span class="hint">カタカナのみ使用できます</span><br/>
+                <label>性別：</label>
+                <select name="gender" required>
+                    <option value="男性">男性</option>
+                    <option value="女性">女性</option>
+                    <option value="選択しない">選択しない</option>
+                </select><br/>
+                <label>住所：</label>
+                <input type="text" name="address"/><br/>
+                <label>電話番号：</label>
+                <input type="text" name="phone" required pattern="^[0-9]{10,15}$" title="電話番号は10〜15桁の数字で入力してください" /><br/>
+                <span class="hint">電話番号は10〜15桁の数字で入力してください</span><br/>
+                <button type="submit">登録</button>
+            </form>
+            <div th:if="${registrationError}" class="error">
+                <p th:text="${registrationError}"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

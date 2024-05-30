@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>記事一覧</title>
+</head>
+<body>
+    <h1>記事一覧</h1>
+    <ul>
+        <li th:each="post : ${posts}">
+            <a th:href="@{'/posts/' + ${post.id}}"><span th:text="${post.title}">記事タイトル</span></a>
+            <p th:text="${post.content}">記事内容の概要</p>
+            <p th:text="${post.author.username}">著者</p>
+            <p th:text="${#dates.format(post.createdAt, 'yyyy-MM-dd HH:mm')}">作成日時</p>
+        </li>
+    </ul>
+    <a href="/posts/create">新しい記事を作成</a>
+</body>
+</html>

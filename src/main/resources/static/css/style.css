@@ -1,0 +1,295 @@
+/* 通用样式 */
+body {
+    font-family: 'Arial', sans-serif; /* 设置字体 */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 背景颜色 */
+}
+
+header {
+    background-color: #333; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+    padding: 1rem;
+    text-align: center; /* 文字居中 */
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* 导航居中 */
+}
+
+header nav a {
+    color: #fff; /* 链接颜色 */
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s; /* 背景色过渡 */
+}
+
+header nav a:hover {
+    background-color: #555; /* 悬停时背景色 */
+}
+
+main {
+    padding: 2rem; /* 内边距 */
+}
+
+main h1 {
+    text-align: center; /* 标题居中 */
+    color: #333; /* 标题颜色 */
+}
+
+/* 文章头部样式 */
+.post-header {
+    display: flex;
+    align-items: center; /* 垂直对齐 */
+    margin-bottom: 1rem;
+}
+
+.post-header img {
+    border-radius: 50%; /* 圆形头像 */
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.post-header span {
+    font-weight: bold; /* 加粗字体 */
+}
+
+/* 列表样式 */
+ul {
+    list-style-type: none; /* 无列表样式 */
+    padding: 0;
+}
+
+li {
+    background-color: #fff; /* 背景色 */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影 */
+}
+
+li h3 {
+    margin: 0 0 1rem; /* 外边距 */
+}
+
+li p {
+    margin: 0.5rem 0; /* 外边距 */
+}
+
+li a {
+    color: #0066cc; /* 链接颜色 */
+    text-decoration: none;
+    font-weight: bold; /* 加粗字体 */
+}
+
+li a:hover {
+    text-decoration: underline; /* 悬停时下划线 */
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #333; /* 背景色 */
+    color: #fff; /* 文字颜色 */
+    text-align: center; /* 文字居中 */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0; /* 固定在底部 */
+}
+
+/* 错误消息样式 */
+.error {
+    color: red; /* 错误消息颜色 */
+}
+
+/* 提示消息样式 */
+.hint {
+    color: gray; /* 提示消息颜色 */
+    font-size: small; /* 字体大小 */
+}
+
+/* 个人资料头部样式 */
+.profile-header {
+    display: flex;
+    align-items: center; /* 垂直对齐 */
+    margin-bottom: 1rem;
+}
+
+.profile-header img {
+    border-radius: 50%; /* 圆形头像 */
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.profile-header span {
+    font-size: 1.5rem;
+    font-weight: bold; /* 加粗字体 */
+}
+
+/* 表单样式 */
+form {
+    background-color: #fff; /* 背景色 */
+    padding: 2rem;
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影 */
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block; /* 块级元素 */
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* 加粗字体 */
+}
+
+form input,
+form select,
+form button {
+    width: 100%; /* 宽度100% */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+}
+
+form button {
+    background-color: #0066cc; /* 按钮背景色 */
+    color: #fff; /* 按钮文字颜色 */
+    border: none;
+    cursor: pointer; /* 指针样式 */
+}
+
+form button:hover {
+    background-color: #005bb5; /* 悬停时背景色 */
+}
+
+/* login-register 页面样式 */
+.login-register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.login-register-container div {
+    flex: 1;
+}
+
+.login-register-container h2 {
+    text-align: center; /* 标题居中 */
+    color: #333; /* 标题颜色 */
+}
+
+/* myPosts 页面样式 */
+.my-posts-container {
+    padding: 2rem;
+}
+
+.my-posts-container h2 {
+    text-align: center; /* 标题居中 */
+    color: #333; /* 标题颜色 */
+}
+
+/* postDetail 页面样式 */
+.post-detail-container {
+    padding: 2rem;
+}
+
+.post-detail-container h1 {
+    text-align: center; /* 标题居中 */
+    color: #333; /* 标题颜色 */
+}
+
+.post-detail-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* postList 页面样式 */
+.post-list-container {
+    padding: 2rem;
+}
+
+.post-list-container h1 {
+    text-align: center; /* 标题居中 */
+    color: #333; /* 标题颜色 */
+}
+
+.post-list-container ul {
+    list-style-type: none; /* 无列表样式 */
+    padding: 0;
+}
+
+.post-list-container li {
+    background-color: #fff; /* 背景色 */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影 */
+}
+
+.post-list-container li h3 {
+    margin: 0 0 1rem; /* 外边距 */
+}
+
+.post-list-container li p {
+    margin: 0.5rem 0; /* 外边距 */
+}
+
+.post-list-container li a {
+    color: #0066cc; /* 链接颜色 */
+    text-decoration: none;
+    font-weight: bold; /* 加粗字体 */
+}
+
+.post-list-container li a:hover {
+    text-decoration: underline; /* 悬停时下划线 */
+}
+
+/* profile 页面样式 */
+.profile-container {
+    padding: 2rem;
+}
+
+.profile-container h1 {
+    text-align: center; /* 标题居中 */
+    color: #333; /* 标题颜色 */
+}
+
+.profile-container .profile-header {
+    display: flex;
+    align-items: center; /* 垂直对齐 */
+    margin-bottom: 1rem;
+}
+
+.profile-container .profile-header img {
+    border-radius: 50%; /* 圆形头像 */
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.profile-container .profile-header span {
+    font-size: 1.5rem;
+    font-weight: bold; /* 加粗字体 */
+}
+
+/* 返回按钮样式 */
+.back-button {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0066cc; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+    text-decoration: none;
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s; /* 背景色过渡 */
+}
+
+.back-button:hover {
+    background-color: #005bb5; /* 悬停时背景颜色 */
+}

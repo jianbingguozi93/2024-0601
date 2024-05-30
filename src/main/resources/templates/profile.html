@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>プロフィール</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>プロフィール</h1>
+    <a class="back-button" th:href="@{/}">戻る</a>
+    <div class="profile-header">
+        <img th:src="@{${user.avatar}}" alt="アバター">
+        <span th:text="${user.username}">ユーザー名</span>
+    </div>
+    <form th:action="@{/updateProfile}" method="post">
+        <label>姓：</label>
+        <input type="text" name="firstName" th:value="${user.firstName}" required/><br/>
+        <label>名：</label>
+        <input type="text" name="lastName" th:value="${user.lastName}" required/><br/>
+        <label>メールアドレス：</label>
+        <input type="email" name="email" th:value="${user.email}" required/><br/>
+        <label>電話番号：</label>
+        <input type="text" name="phone" th:value="${user.phone}" required/><br/>
+        <button type="submit">更新</button>
+    </form>
+    <form th:action="@{/uploadAvatar}" method="post" enctype="multipart/form-data">
+        <label>アバターをアップロード：</label>
+        <input type="file" name="avatar" required/><br/>
+        <button type="submit">アップロード</button>
+    </form>
+</body>
+</html>
